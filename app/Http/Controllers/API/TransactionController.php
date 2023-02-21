@@ -97,7 +97,6 @@ class TransactionController extends Controller
             'transaction_details' => [
                 'order_id' => $transaction->id,
                 'gross_amount' => (int) $transaction->total,
-   
             ],
             'customer_details' => [
                 'first_name' => $transaction->user->name,
